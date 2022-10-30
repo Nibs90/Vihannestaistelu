@@ -2,7 +2,7 @@
 Vihannestaistelu, Solidabiksen Koodihaaste-kisaan
 
 Käytin projektissa Python kieltä, toteutettu VS Codella, Windows 11:ssa  
-Projekti toimii komentorivillä, suorittaakseen ohjelman, tarvitsee vain ladata tiedostot ja suorittaa main.py tiedosto.  
+Projekti toimii komentorivillä, suorittaakseen ohjelman, tarvitsee vain ladata tiedostot Main ja functions.py:t ja suorittaa Main.py tiedosto.  
 
 Projektin toiminta on yksinkertaista, käyttäjältä kysytään kaksi numeroa, joiden perusteella valitaan halutut vihannekset taistelijoiksi, vihanneksia on yhteensä 5kpl. Tämän valinnan jälkeen, valinnan numero ajetaan funktion läpi, joka muuttaa valinnan halutun vihanneksen nimeksi. Jonka jälkeen toisessa funktiossa, vihannekset tiedot haetaan Finelin JSON- tietokannasta.  
   
