@@ -8,6 +8,6 @@ Sama juttu tehdään toiselle vihannekselle, jonka jälkeen tiedot tulostetaan j
 Voittaja on se, joka selviää loppuun saakka.
   
 Tekijä:
-Jarno Heinonen
+Jarno Heinonen  
 E-mail:
 90heinonen@gmail.com
