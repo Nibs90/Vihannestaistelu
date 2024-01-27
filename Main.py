@@ -12,17 +12,17 @@ print(
 # Kysytään 1-5 valintaa, jolla valitaan haluttu taistelija
 # Jatketaan niin kauan kunnes oikeanlaiset valinnat
 while True:
-    nro = input("Syötä eka vihannes ")
-    nro1 = input("Syötä toka vihannes ")
-    if nro in map(str, range(1, 6)) and nro1 in map(str, range(1, 6)):
-        nro = int(nro) - 1
-        nro1 = int(nro1) - 1
+    valinta1 = input("Syötä ensimmäinen vihannes: ")
+    valinta2 = input("Syötä toinen vihannes: ")
+
+    if valinta1.isdigit() and valinta2.isdigit() and 1 <= int(valinta1) <= 5 and 1 <= int(valinta2) <= 5:
+        valinta1, valinta2 = int(valinta1) - 1, int(valinta2) - 1
         break
-    print("Väärä arvo, arvon tulee olla 1-5")
+    print("Virheellinen arvo, arvon tulee olla 1-5 ja numeromuotoinen.")
 
 # Muutetaan valintanumero vihannekseksi
-valinta = functions.choice_vege(nro)
-valinta1 = functions.choice_vege(nro1)
+vihannes1 = functions.choice_vege(valinta1)
+vihannes2 = functions.choice_vege(valinta2)
 
 # Haetaan vihannesten tiedot
 energia, hilarit, protein, rasva = functions.get_stats(valinta)
@@ -56,8 +56,8 @@ energia, energia1 = functions.fight(
     valinta, valinta1, energia, energia1, hitaus, hitaus1
 )
 
-# Selvitetään voittaja
+# Tulostetaan voittaja f-stringin avulla
 if energia > energia1:
-    print("\n{0} voitti taistelun!".format(valinta))
+    print(f"\n{vihannes1} voitti taistelun!")
 else:
-    print("\n{0} voitti taistelun!".format(valinta1))
+    print(f"\n{vihannes2} voitti taistelun!")
